@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Call of the Wild Pan Flute" type="Magic Item" source="Homebrew" id="ID_HOMEBREW_PANFLUTE_THE_PAN_GOD">
+    <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+    <description>
+    <p>If you have proficiency with the pan flute, you can add your proficiency bonus to any ability
+     checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.
+    </p>
+    <p>An instrument of the bards is an exquisite example of it kind, superior to an ordinary instrument in every way. Seven types of these 
+    instruments exist, each named after a legendary bard college. The following table lists the spells common to all instruments, as well as 
+    the spells specific to each one and its rarity. A creature that attempts to play the instrument without being attuned to it must succeed on a 
+    DC 15 Wisdom saving throw or take 2d4 psychic damage.</p>
+    <p class="indent">You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it
+     can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.</p>
+    <p class="indent">You can play the instrument while casting a spell that causes any of its targets to be charmed on a failed saving throw, thereby 
+    imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.</p>
+    <p class="indent">
+     Allows a bard to cast each of the following spells once a day:
+    <i>Polymorph</i>
+    ,
+    <i>Fear</i>
+    ,
+    <i>Transport Via Plants</i>,
+    <i>Wall of Fire</i>
+    ,
+    <i>Detect Good and Evil</i>
+    , and
+    <i>Calm Emotions</i>
+    </p>
+    </description>
+    <setters>
+    <set name="keywords">bard</set>
+    <set name="category">Musical Instruments</set>
+    <set name="cost" currency="gp">40,000</set>
+    <set name="weight" lb="1">1 lbs.</set>
+    <set name="slot">onehand</set>
+    <!-- <set name="type" >Musical Instrument</set> -->
+    <set name="type">Wondrous Item</set>
+    <set name="attunement" addition="by a Bard" >true</set>
+    <set name="rarity">Rare</set>
+    
+    </setters>
+    <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Bard" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" spellcasting="Paladin" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" spellcasting="Bard" />
+			<grant type="Spell" id="ID_PHB_SPELL_TRANSPORT_VIA_PLANTS" spellcasting="Druid" />
+			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Bard" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" spellcasting="Wizard" /> 
+</rules>
+    </element>
+</elements>
